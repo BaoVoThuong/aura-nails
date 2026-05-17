@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 
@@ -40,7 +40,7 @@ const menu = [
   }
 ];
 
-const fadeIn = {
+const fadeIn: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
 };
